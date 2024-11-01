@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+    <ImageView fitHeight="46.0" fitWidth="73.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../../imagens/estoque.png" />
+    </ImageView>
+    <ImageView fitHeight="28.0" fitWidth="34.0" layoutX="980.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../../imagens/fechar.png" />
+    </ImageView>
+    <Label layoutX="87.0" layoutY="33.0" text="MEU ESTOQUE" textFill="#210d6e">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="817.0" layoutY="33.0" text="MOVIMENTAÇÕES" textFill="#210d6e">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="690.0" layoutY="33.0" text="CATEGORIAS" textFill="#210d6e">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="568.0" layoutY="33.0" text="PRODUTOS" textFill="#210d6e">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="44.0" layoutY="172.0" text="MOVIMENTAÇÕES" textFill="#210d6e">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <Label layoutX="51.0" layoutY="270.0" text="ID da movimentação" textFill="#210d6e">
+        <font>
+            <Font size="10.0" />
+        </font>
+    </Label>
+    <Label layoutX="148.0" layoutY="271.0" text="Data" textFill="#210d6e">
+        <font>
+            <Font size="10.0" />
+        </font>
+    </Label>
+    <Label layoutX="213.0" layoutY="270.0" text="Tipo" textFill="#210d6e">
+        <font>
+            <Font size="10.0" />
+        </font>
+    </Label>
+    <Label layoutX="279.0" layoutY="271.0" text="Produto" textFill="#210d6e">
+        <font>
+            <Font size="10.0" />
+        </font>
+    </Label>
+    <Label layoutX="475.0" layoutY="271.0" text="Categoria" textFill="#210d6e">
+        <font>
+            <Font size="10.0" />
+        </font>
+    </Label>
+    <Label layoutX="596.0" layoutY="271.0" text="Qtd. movimentada" textFill="#210d6e">
+        <font>
+            <Font size="10.0" />
+        </font>
+    </Label>
+    <Label layoutX="690.0" layoutY="271.0" text="Qtd. atual" textFill="#210d6e">
+        <font>
+            <Font size="10.0" />
+        </font>
+    </Label>
+    <Label layoutX="746.0" layoutY="271.0" text="Ref. - baixo estoque" textFill="#210d6e">
+        <font>
+            <Font size="10.0" />
+        </font>
+    </Label>
+    <Label layoutX="840.0" layoutY="270.0" text="Preço" textFill="#210d6e">
+        <font>
+            <Font size="10.0" />
+        </font>
+    </Label>
+    <ImageView fitHeight="27.0" fitWidth="36.0" layoutX="933.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../../imagens/lupa.png" />
+    </ImageView>
+    <TextField layoutX="51.0" layoutY="285.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="91.0" />
+    <TextField layoutX="148.0" layoutY="285.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="59.0" />
+    <TextField layoutX="213.0" layoutY="285.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="59.0" />
+    <TextField layoutX="279.0" layoutY="285.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="189.0" />
+    <TextField layoutX="475.0" layoutY="285.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="116.0" />
+    <TextField layoutX="596.0" layoutY="285.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="88.0" />
+    <TextField layoutX="690.0" layoutY="285.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="51.0" />
+    <TextField layoutX="746.0" layoutY="285.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="88.0" />
+    <TextField layoutX="840.0" layoutY="285.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="72.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#210d6e" height="27.0" layoutX="-8.0" layoutY="75.0" stroke="BLACK" strokeType="INSIDE" width="1040.0" />
+    <TableView layoutX="60.0" layoutY="312.0" prefHeight="410.0" prefWidth="861.0">
+        <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+    </TableView>
+    <ImageView fitHeight="28.0" fitWidth="34.0" layoutX="967.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../../imagens/imprimir.png" />
+        </image>
+    </ImageView>
+</Pane>
