@@ -3,6 +3,11 @@ Repositório criado com o intuito de abrigar o código fonte de um sistema de Co
 
 ### 👨🏻‍💻 Integrantes: 
 ```
+Gabriel Lemos Guerra de Almeida
+Curso: Sistemas de informação
+RA:
+
+------------------------------------------------
 
 Hellen Machado Borba 
 Curso: Sistemas de informação
@@ -30,6 +35,12 @@ RA: 1072318584
 
 Maria Luiza Garcia
 Curso: Sistemas de informação
+RA: 
+
+------------------------------------------------
+
+Melissa Schmidt Bervig
+Curso: 
 RA: 
 
 ------------------------------------------------
