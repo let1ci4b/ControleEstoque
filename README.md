@@ -5,13 +5,13 @@ Repositório criado com o intuito de abrigar o código fonte de um sistema de Co
 ```
 Gabriel Lemos Guerra de Almeida
 Curso: Sistemas de informação
-RA:
+RA: 1072322350
 
 ------------------------------------------------
 
 Hellen Machado Borba 
 Curso: Sistemas de informação
-RA:
+RA: 1072312050
 
 ------------------------------------------------
 
@@ -22,8 +22,8 @@ RA:
 ------------------------------------------------
 
 Julia Freitas Rabelo
-Curso: 
-RA:
+Curso: Sistemas de informação
+RA: 10723115807
 
 ------------------------------------------------
 
@@ -35,7 +35,7 @@ RA: 1072318584
 
 Maria Luiza Garcia
 Curso: Sistemas de informação
-RA: 
+RA: 1072310864
 
 ------------------------------------------------
 
