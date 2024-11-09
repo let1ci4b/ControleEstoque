@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="468.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controledeestoquea3.ControladorEstoque">
+    <TableView fx:id="tableMovimentacoes" editable="true" layoutX="34.0" layoutY="26.0" prefHeight="400.0" prefWidth="727.0">
+        <columns>
+            <TableColumn fx:id="colID" prefWidth="86.99999809265137" text="ID do produto">
+                <cellValueFactory>
+                    <PropertyValueFactory property="id" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colData" prefWidth="113.0000228881836" text="Data">
+                <cellValueFactory>
+                    <PropertyValueFactory property="data" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colTipo" prefWidth="281.6000061035156" text="Produto">
+                <cellValueFactory>
+                    <PropertyValueFactory property="tipo" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colNome" prefWidth="101.5999755859375" text="Quantidade">
+                <cellValueFactory>
+                    <PropertyValueFactory property="nome" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colCategoria" minWidth="0.0" prefWidth="161.79998779296875" text="Tipo(Entrada/Saída)">
+                <cellValueFactory>
+                    <PropertyValueFactory property="categoria" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+    <ImageView fx:id="abrirRelatorio" />
+
+    <HBox layoutX="20.0" layoutY="450.0" spacing="10" />
+     <Button fx:id="btnExportar" layoutX="700.0" layoutY="436.0" text="Exportar" />
+   <Label layoutX="20.0" layoutY="430.0" text="000 entradas no último mês | 00000 saídas no último mês" />
+</AnchorPane>

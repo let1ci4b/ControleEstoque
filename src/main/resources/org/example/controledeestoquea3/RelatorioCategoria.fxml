@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="476.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controledeestoquea3.ControladorEstoque">
+    <TableView fx:id="tableMovimentacoes" layoutX="20.0" layoutY="20.0" prefHeight="400.0" prefWidth="700.0">
+        <columns>
+            <TableColumn fx:id="colID" prefWidth="100.0" text="ID da categoria">
+                <cellValueFactory>
+                    <PropertyValueFactory property="id" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colNome" prefWidth="99.0000228881836" text="Nome">
+                <cellValueFactory>
+                    <PropertyValueFactory property="nome" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colDescricao" prefWidth="373.60003662109375" text="Descrição">
+                <cellValueFactory>
+                    <PropertyValueFactory property="descricao" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colRefBaixoestoque" prefWidth="126.39996337890625" text="Ref - baixo estoque">
+                <cellValueFactory>
+                    <PropertyValueFactory property="refbaixoestoque" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+    <ImageView fx:id="abrirRelatorio" />
+
+    <HBox layoutX="20.0" layoutY="450.0" spacing="10" />
+   <Label layoutX="20.0" layoutY="430.0" text="73 categorias" />
+     <Button fx:id="btnExportar" layoutX="659.0" layoutY="429.0" text="Exportar" />
+</AnchorPane>

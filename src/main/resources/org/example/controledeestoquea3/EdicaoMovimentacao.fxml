@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="354.0" prefWidth="262.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controledeestoquea3.EdicaoProduto">
+    <children>
+        <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="28.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
+        <Label layoutX="67.0" layoutY="31.0" text="MOVIMENTAÇÃO">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="28.0" layoutY="98.0" text="Data" />
+        <TextField layoutX="28.0" layoutY="119.0" prefHeight="26.0" prefWidth="198.0" />
+        <Label layoutX="30.0" layoutY="154.0" text="Produto" />
+        <Label layoutX="28.0" layoutY="210.0" text="Tipo" />
+        <ComboBox layoutX="28.0" layoutY="175.0" prefHeight="26.0" prefWidth="198.0" />
+        <Label layoutX="135.0" layoutY="210.0" text="Quantidade" />
+        <TextField layoutX="134.0" layoutY="233.0" prefHeight="26.0" prefWidth="90.0" />
+        <Button layoutX="30.0" layoutY="282.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" text="CADASTRAR" />
+        <Button layoutX="131.0" layoutY="282.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="83.0" text="CANCELAR" />
+        <ComboBox layoutX="30.0" layoutY="232.0" prefHeight="26.0" prefWidth="90.0" />
+    </children>
+</AnchorPane>
