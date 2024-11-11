@@ -6,36 +6,35 @@
 <?import javafx.scene.layout.*?>
 
 <AnchorPane prefHeight="476.0" prefWidth="862.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controledeestoquea3.ControladorEstoque">
-    <TableView fx:id="tableMovimentacoes" layoutX="20.0" layoutY="20.0" prefHeight="400.0" prefWidth="775.0">
+    <TableView fx:id="tableProduto" layoutX="20.0" layoutY="20.0" prefHeight="400.0" prefWidth="775.0">
         <columns>
             <TableColumn fx:id="colID" prefWidth="100.0" text="ID do produto">
                 <cellValueFactory>
-                    <PropertyValueFactory property="id" />
+                    <PropertyValueFactory property="idProduto" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn fx:id="colData" prefWidth="399.1999969482422" text="Nome">
-                <cellValueFactory>
-                    <PropertyValueFactory property="data" />
-                </cellValueFactory>
-            </TableColumn>
-            <TableColumn fx:id="colTipo" prefWidth="100.79998779296875" text="Categoria">
-                <cellValueFactory>
-                    <PropertyValueFactory property="tipo" />
-                </cellValueFactory>
-            </TableColumn>
-            <TableColumn fx:id="colNome" prefWidth="100.0" text="Preço">
+            <TableColumn fx:id="colNome" prefWidth="399.1999969482422" text="Nome">
                 <cellValueFactory>
                     <PropertyValueFactory property="nome" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn fx:id="colCategoria" prefWidth="77.20001220703125" text="Quantidade">
+            <TableColumn fx:id="colCategoria" prefWidth="100.79998779296875" text="Categoria">
                 <cellValueFactory>
                     <PropertyValueFactory property="categoria" />
                 </cellValueFactory>
             </TableColumn>
+            <TableColumn fx:id="colPreco" prefWidth="100.0" text="Preço">
+                <cellValueFactory>
+                    <PropertyValueFactory property="preco" />
+                </cellValueFactory>
+            </TableColumn>
+    <TableColumn fx:id="colQuantidade" prefWidth="77.20001220703125" text="Quantidade">
+                <cellValueFactory>
+                    <PropertyValueFactory property="quantidade" />
+                </cellValueFactory>
+            </TableColumn>
         </columns>
     </TableView>
-    <ImageView fx:id="abrirRelatorio" />
 
     <HBox layoutX="20.0" layoutY="450.0" spacing="10" />
      <Button fx:id="btnExportar" layoutX="734.0" layoutY="430.0" text="Exportar" />

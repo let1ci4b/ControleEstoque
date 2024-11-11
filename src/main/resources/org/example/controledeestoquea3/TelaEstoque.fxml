@@ -125,6 +125,6 @@
          <Image url="@../../../../../../../ControleDeEstoqueA3/src/main/resources/imagens/fechar.png" />
       </image>
    </ImageView>
-   <Button id="btnFecharJanela" fx:id="btnFecharJanela" layoutX="963.0" layoutY="26.0" mnemonicParsing="false" onAction="#fecharJanela" opacity="0.0" prefHeight="35.0" prefWidth="36.0" />
+   <Button fx:id="btnFecharJanela" layoutX="963.0" layoutY="26.0" mnemonicParsing="false" onAction="#fecharJanela" opacity="0.0" prefHeight="35.0" prefWidth="36.0" />
 </Pane>
 </AnchorPane>

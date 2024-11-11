@@ -46,5 +46,4 @@
          <Image url="@../../../imagens/fechar.png"/>
       </image>
    </ImageView>
-   <ImageView fx:id="abrirRelatorio"/>
 </AnchorPane>

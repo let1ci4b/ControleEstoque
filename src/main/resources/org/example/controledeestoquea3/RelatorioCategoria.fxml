@@ -5,12 +5,12 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="476.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controledeestoquea3.ControladorEstoque">
-    <TableView fx:id="tableMovimentacoes" layoutX="20.0" layoutY="20.0" prefHeight="400.0" prefWidth="700.0">
+<AnchorPane prefHeight="476.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controledeestoquea3.ControladorRelatorioCategoria">
+    <TableView fx:id="tableCategoria" layoutX="20.0" layoutY="20.0" prefHeight="400.0" prefWidth="700.0">
         <columns>
             <TableColumn fx:id="colID" prefWidth="100.0" text="ID da categoria">
                 <cellValueFactory>
-                    <PropertyValueFactory property="id" />
+                    <PropertyValueFactory property="idCategoria" />
                 </cellValueFactory>
             </TableColumn>
             <TableColumn fx:id="colNome" prefWidth="99.0000228881836" text="Nome">
@@ -30,7 +30,6 @@
             </TableColumn>
         </columns>
     </TableView>
-    <ImageView fx:id="abrirRelatorio" />
 
     <HBox layoutX="20.0" layoutY="450.0" spacing="10" />
    <Label layoutX="20.0" layoutY="430.0" text="73 categorias" />

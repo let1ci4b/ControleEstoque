@@ -1,9 +1,12 @@
 package org.example.controledeestoquea3;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
@@ -11,7 +14,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class ControladorEstoque extends ControladorNavegacaoSuperior {
+public class ControladorEstoque{
 
     @FXML
     private ImageView abrirRelatorio;
@@ -52,5 +55,21 @@ public class ControladorEstoque extends ControladorNavegacaoSuperior {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    public void carregarTela(String fxmlFile) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/controledeestoquea3/" + fxmlFile));
+            Parent root = loader.load();
+
+            // Limpa o contentPane e adiciona a nova tela
+            contentPane.getChildren().clear();
+            contentPane.getChildren().add(root);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public void fecharJanela(ActionEvent event) {
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 }

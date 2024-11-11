@@ -1,19 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<VBox fx:id="contentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-   prefHeight="650.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/17.0.12"
-   xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controledeestoquea3.ControladorCategoria">
-    <fx:include source="NavegacaoSuperior.fxml"/>
-    <Label layoutX="58.0" layoutY="22.0" text="CATEGORIAS" textFill="#210d6e">
+<Pane fx:id="contentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controledeestoquea3.ControladorCategoria">
+    <ImageView fitHeight="46.0" fitWidth="73.0" layoutX="24.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../../imagens/estoque.png" />
+        </image>
+    </ImageView>
+    <Label fx:id="lblMovimentacoes" layoutX="827.0" layoutY="43.0" text="MOVIMENTAÇÕES" textFill="#210d6e">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label fx:id="lblCategorias" layoutX="700.0" layoutY="43.0" text="CATEGORIAS" textFill="#210d6e">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label fx:id="lblProdutos" layoutX="578.0" layoutY="43.0" text="PRODUTOS" textFill="#210d6e">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#210d6e" height="27.0" layoutX="2.0" layoutY="85.0" stroke="BLACK" strokeType="INSIDE" width="1040.0" />
+    <Button fx:id="btnFecharJanela" layoutX="973.0" layoutY="36.0" mnemonicParsing="false" opacity="0.0" prefHeight="35.0" prefWidth="36.0" />
+    <ImageView fitHeight="28.0" fitWidth="34.0" layoutX="977.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../../imagens/fechar.png" />
+        </image>
+    </ImageView>
+    <Label layoutX="104.0" layoutY="40.0" text="CATEGORIAS" textFill="#210d6e">
         <font>
             <Font size="18.0" />
         </font>
@@ -85,12 +106,4 @@
     <ImageView fx:id="abrirRelatorio" fitHeight="28.0" fitWidth="34.0" layoutX="981.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
         <Image url="@../../../imagens/relatorios.png" />
     </ImageView>
-    <Label fx:id="lblProdutos">
-</Label>
-    <Label fx:id="lblCategorias">
-    </Label>
-    <Label fx:id="lblMovimentacoes">
-    </Label>
-    <Label fx:id="lblMeuEstoque">
-    </Label>
-</VBox>
+</Pane>
